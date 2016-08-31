@@ -4,5 +4,7 @@
 # should be converted to CS205.TXT.
 
 echo "Renaming all files in uppercase..."
+for file in * ; do mv -- "$file" "$(tr a-z A-Z <<< "$file")" ; done
+
 
 
