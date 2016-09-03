@@ -4,6 +4,4 @@
 # redirection operator <.
 
 read -p "Enter file name: " filename
-uniq < $filename
-  
-
+echo "Number of unique words in $filename are $(cat $filename | sort | uniq | wc -w)"
