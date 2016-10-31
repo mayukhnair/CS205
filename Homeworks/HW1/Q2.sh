@@ -3,4 +3,4 @@
 # current directory. The output file should be named as allmixedLast5.
 
 echo "Concatenating last 5 lines of text files, check them out in allmixedLast5"
-head -n 5 *.txt > allmixedLast5
+tail -n 5 *.txt > allmixedLast5
